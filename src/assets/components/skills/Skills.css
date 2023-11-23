@@ -1,0 +1,14 @@
+.section__skills {
+    max-width: 350px;
+    margin: 4vh auto;
+}
+
+.div__skill {
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 10px 15px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    background-color: #2a2f4c;
+    margin: 5px;
+}
+

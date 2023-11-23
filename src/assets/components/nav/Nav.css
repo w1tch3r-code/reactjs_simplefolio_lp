@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar div:first-of-type {
+    font-family: 'Poppins-Bd';
+}
+
+.navbar div:last-of-type a {
+    margin-left: 20px;
+}
+
+.navbar div:last-of-type a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #bdbddd;
+    transition: width .3s;
+}
+
+.navbar div:last-of-type a:hover:after {
+    width: 100%;
+}

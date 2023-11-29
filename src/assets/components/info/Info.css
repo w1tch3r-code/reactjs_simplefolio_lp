@@ -11,3 +11,10 @@
 .section__info h1 span {
     color: #90a0d9;
 }
+
+.resume__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}

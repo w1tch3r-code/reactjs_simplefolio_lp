@@ -1,18 +1,23 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-
+}
+.logo {
+    color: #bdbddd;
+    font-size: 1.2rem;
 }
 
 .navbar div:first-of-type {
     font-family: 'Poppins-Bd';
 }
 
-.navbar div:last-of-type a {
-    margin-left: 20px;
+.navbar .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.navbar div:last-of-type a:after {
+.navbar .main-nav a:after {
     content: '';
     display: block;
     width: 0;
@@ -21,6 +26,6 @@
     transition: width .3s;
 }
 
-.navbar div:last-of-type a:hover:after {
+.navbar .main-nav a:hover:after {
     width: 100%;
 }

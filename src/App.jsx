@@ -2,16 +2,16 @@ import Header from "./assets/components/header/Header.jsx";
 import MainElement from "./assets/components/main/MainElement.jsx";
 import Footer from "./assets/components/footer/Footer.jsx";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
-	// vanilla js
+	const [darkMode, setDarkmode] = useState(false);
 	return (
-		<>
-			{/* JSX --> Kombination aus HTML und JS*/}
-			<Header />
+		<div className={`wrapper ${darkMode ? 'light' : ''}`}>
+			<Header setDarkmode={setDarkmode} darkMode={darkMode}/>
 			<MainElement />
 			<Footer />
-		</>
+		</div>
 	);
 }
 

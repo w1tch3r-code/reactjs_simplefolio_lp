@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ButtonItem from "../button/ButtonItem";
 
 const Footer = () => {

@@ -12,7 +12,7 @@ const Nav = ({setDarkmode, darkMode}) => {
 	return (
 		<nav className='navbar'>
 			<div>
-				<a className='logo' href="#">JS.</a>
+				<a className='logo' href="#">RB.</a>
 			</div>
 			<div className='main-nav'>
 				<a href="#">projects</a>

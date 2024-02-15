@@ -1,8 +1,8 @@
 .button {
 	display: inline-block;
 	padding: 10px 20px;
-	border: 2px solid #90a0d9;
-	color: #90a0d9;
+	border: 2px solid var(--mediumBlueGrey);
+	color: var(--mediumBlueGrey);
 	font-size: 0.8rem;
 	font-weight: 600;
 	margin-block: 10px;
@@ -29,13 +29,13 @@
 	left: 0;
 	width: 0%;
 	height: 100%;
-	background-color: #90a0d9;
+	background-color: var(--mediumBlueGrey);
 	transition: all 0.3s;
 	z-index: -1;
 }
 
 .button:hover {
-	color: #23283e;
+	color: var(--darkerBlue);
 }
 
 .button:hover:before {

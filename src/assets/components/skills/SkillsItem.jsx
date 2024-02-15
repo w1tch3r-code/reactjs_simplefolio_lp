@@ -1,7 +1,12 @@
+import PropTypes from 'prop-types';
 import './Skills.css';
 
-const SkillItem = (props) => {
-	return <div className='div__skill'>{props.title}</div>;
+const SkillItem = ({title}) => {
+	return <div className='div__skill'>{title}</div>;
 };
+
+SkillItem.propTypes = {
+	title: PropTypes.string.isRequired,
+}
 
 export default SkillItem;

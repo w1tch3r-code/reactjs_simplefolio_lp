@@ -1,27 +1,34 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import Forwarding from "../svg/Forwarding";
 import Github from "../svg/Github";
 import "./Article.css";
 
-const ArticleItem = (props) => {
+const ArticleItem = ({ title, description, githubUrl, liveUrl, skills }) => {
 	return (
 		<article>
-			<h3>{props.title}</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Laudantium, dignissimos tempora ullam dolorem natus ad?
-			</p>
+			<h3>{title}</h3>
+			<p>{description}</p>
 			<div className="skills">
-				<a href="#">JavaScript</a>
-				<a href="#">React</a>
-				<a href="#">SASS</a>
+				<p>{skills}</p> 
 			</div>
 			<div className="project__links_wrapper">
-				<Github />
-				<Forwarding />
+				<a href={githubUrl} target="_blank" rel="noreferrer">
+					<Github />
+				</a>
+				<a href={liveUrl} target="_blank" rel="noreferrer">
+					<Forwarding />
+				</a>
 			</div>
 		</article>
 	);
+};
+
+ArticleItem.propTypes = {
+	title: PropTypes.string,
+	description: PropTypes.string,
+	skills: PropTypes.string,
+	liveUrl: PropTypes.string,
+	githubUrl: PropTypes.string,
 };
 
 export default ArticleItem;

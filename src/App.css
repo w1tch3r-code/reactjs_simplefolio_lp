@@ -36,21 +36,37 @@ img {
 
 
 /* ========================================================== 
-							Colors
+						Color Variables
 ========================================================== */
 
-/* #23283e; #2a2f4c; #bdbddd; #cdcdff; #90a0d9 #2978b5*/
+:root {
+    --darkerBlue: #23283e;
+    --darkBlue: #2a2f4c;
+    --lightBlueGrey: #bdbddd;
+    --lightBlueGrey60: #bdbddd60;
+    --lighterBlueGrey: #cdcdff;
+    --lighterBlueGrey50: #cdcdff80;
+    --lighterBlueGrey20: #ccccff33;
+    --mediumBlueGrey: #90a0d9;
+    --cyan: #2978b5;
+    --white: #fff;
+    --grey: #444;
+    --black10: #0000001a;
+    --black20: #00000033;
+    --black50: #00000080;
+    --black80: #000000cc;
+}
 
 /* ========================================================== 
-                Body - Wrapper - Sections
+                        Body - Wrapper
 ========================================================== */
 
 body {
 	font-family: 'Poppins';
-    background-color: #23283e;
+    background-color: var(--darkerBlue);
     text-align: center;
     min-width: 300px;
-    color: #cdcdff;
+    color: var(--lighterBlueGrey);
 }
 
 .wrapper {
@@ -60,7 +76,7 @@ body {
 }
 
 /* ========================================================== 
-                            Content
+                        Global - Content
 ========================================================== */
 
 header {
@@ -70,23 +86,23 @@ header {
 
 h2 {
     font-family: 'Poppins-Bd';
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding-block: 20px;
 }
 
 h3 {
     font-family: 'Poppins-Bd';
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-block: 10px;
 }
 
 p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding-block-end: 20px;
 }
 
 a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     display: inline-block;
 }
 
@@ -105,7 +121,7 @@ address:after {
     display: block;
     width: 0;
     height: 2px;
-    background: #bdbddd;
+    background: var(--lightBlueGrey);
     transition: width .3s;
 }
 
@@ -115,11 +131,12 @@ address:hover:after {
 
 svg {
     width: 1.2rem;
-    fill: #bdbddd;
+    fill: var(--lightBlueGrey); 
+    margin-top: 5px;
 }
 
 svg:hover {
-    fill: #bdbddd60;
+    fill: var(--lightBlueGrey60);
     cursor: pointer;
 }
 
@@ -128,47 +145,59 @@ svg:hover {
 ========================================================== */
 
 .light {
-    background-color: #fff;
-    color: #444;
+    background-color: var(--white);
+    color: var(--grey);
 }
 
 .light .logo {
-    color: #2978b5;
+    color: var(--cyan);
+}
+
+.light .logo:hover  {
+    color: var(--grey);
 }
 
 .light .navbar .main-nav a:after {
-    background: #2978b5;
+    background: var(--cyan);
 }
 
 .light .section__info h1 span {
-    color: #2978b5;
+    color: var(--cyan);
 }
 
 .light .button {
-	border-color: #2978b5;
-    color: #2978b5;
+	border-color: var(--cyan);
+    color: var(--cyan);
 }
 
 .light .button:before {
-	background-color: #2978b5;
+	background-color: var(--cyan);
 }
 
 .light .button:hover {
-	color: #fff;
+	color: var(--white);
 }
 
 .light .div__skill {
     background-color: transparent;
 }
 
+.light .react-multiple-carousel__arrow {
+	background: var(--black80);
+}
+
+.light .react-multiple-carousel__arrow:hover {
+	background: var(--black50);
+}
+
 .light svg {
-	fill: rgb(69, 69, 69);
+	fill: var(--grey);
 }
 
 .light svg:hover {
-	fill: #2978b5;
+	fill: var(--cyan);
 }
 
 .light address:after {
-    background: #2978b5;
+    background: var(--cyan);
 }

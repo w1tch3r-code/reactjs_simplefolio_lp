@@ -6,12 +6,12 @@ const SkillDivs = () => {
 			<h2>SKILLS</h2>
 			<SkillsItem title={"HTML"} />
 			<SkillsItem title={"CSS"} />
+			<SkillsItem title={"SCSS"} />
 			<SkillsItem title={"JavaScript"} />
 			<SkillsItem title={"React"} />
-			<SkillsItem title={"SASS"} />
-			<SkillsItem title={"Tailwind CSS"} />
 			<SkillsItem title={"Git"} />
 			<SkillsItem title={"UI/UX"} />
+			<SkillsItem title={"WordPress"} />
 		</section>
 	);
 };

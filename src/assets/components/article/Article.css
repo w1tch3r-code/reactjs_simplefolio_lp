@@ -1,29 +1,70 @@
 .section__projects {
 	text-align: center;
 	margin: 0 auto;
+	max-width: 870px;
 }
 
-.section__projects div {
+.section__projects h2 {
+	padding-block: 20px 0;
+}
+
+.section__projects:hover .react-multiple-carousel__arrow {
+	opacity: 1;
+}
+
+.react-multiple-carousel__arrow {
+	background: var(--lighterBlueGrey20);
+	opacity: 0;
+}
+
+.react-multiple-carousel__arrow:hover {
+	background: var(--lighterBlueGrey50);
+}
+
+.react-multiple-carousel__arrow--right {
+	right: calc(0% + 1px);
+}
+
+.react-multiple-carousel__arrow--left {
+	left: calc(0% + 1px);
+}
+
+.react-multi-carousel-list {
+	padding: 30px 0;
+}
+
+.react-multi-carousel-track {
+	margin: 0 -20px;
+}
+
+.section__projects article {
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	width: 100%;
-    gap: 30px;
-}
-
-.section__projects div article {
-	max-width: 250px;
-	padding-block: 10px 40px;
+	height: 100%;
+	padding-block: 10px 30px;
 	padding-inline: 20px;
-	box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+	margin-inline: 40px 0;
+	box-shadow: 0 0 20px 2px var(--black20);
 	transition: all 0.5s ease-in-out;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.section__projects div article:hover {
-	margin: -10px 0 10px;
+.section__projects article a {
+	font-size: 0.8rem;
+}
+
+.section__projects article:hover {
+	margin-block: -10px;
 	cursor: pointer;
 }
 
+.section__projects article .skills p {
+	font-weight: 600;
+}
+
 .project__links_wrapper {
-	margin-top: 30px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	column-gap: 15px;
 }
